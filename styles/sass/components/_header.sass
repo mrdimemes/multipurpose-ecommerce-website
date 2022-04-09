@@ -1,0 +1,53 @@
+.header
+  background-color: rgba(255, 255, 255, 0.5)
+  position: fixed
+  top: 0
+  width: 100%
+  color: $dark-color
+  &__line
+    height: 60px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+    &:first-child::after
+      content: ""
+      display: block
+      height: 1px
+      width: 100%
+      background-color: black
+      opacity: 0.62
+      position: absolute
+      bottom: 0
+  &__info
+    display: flex
+    align-items: center
+    column-gap: 80px
+  &__mailto
+    font-weight: 700
+  &__switches
+    font-weight: 800
+    display: flex
+    align-items: center
+    column-gap: 20px
+  &__lang
+    cursor: pointer
+  &__currency
+    cursor: pointer
+  &__logo
+    font-weight: 800
+    font-size: 2.6em
+  &__nav
+    display: flex
+    align-items: center
+    column-gap: 30px
+  &__nav-list
+    display: flex
+    align-items: center
+    column-gap: 20px
+    font-weight: 700
+  &__icon
+    width: 20px
+    height: 20px
+    background-color: black
+    cursor: pointer

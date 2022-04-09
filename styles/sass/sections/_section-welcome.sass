@@ -1,0 +1,30 @@
+.section-welcome
+  height: calc( 100vh + 120px )
+  background: url("../../assets/images/face.png") no-repeat right 0 top 120px / contain, top / cover no-repeat url("../../assets/images/particles.png"), $counter-color
+  &__wrapper
+    padding-top: 120px
+    height: calc( 100% - 240px )
+    display: flex
+    align-items: center
+  &__content
+    text-align: center
+    width: 680px
+  &__label
+    text-transform: uppercase
+    color: $dark-color
+    margin-bottom: 30px
+    &-item
+      display: block
+      height: min-content
+      font-size: 8em
+      letter-spacing: -0.05em
+      line-height: 73%
+    &-year
+      padding-top: 7px
+      font-size: 3.5em
+      letter-spacing: 6rem
+      text-indent: 6.5rem
+  &__text
+    color: $light-color
+    line-height: 1.5
+    margin-bottom: 50px
