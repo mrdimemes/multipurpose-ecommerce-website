@@ -2,5 +2,54 @@
   height: 1100px
   background-color: $lighter-color
   background-image: url(../../assets/images/webp/background.webp)
-  background-size: contain
-  background-repeat: repeat
+  background-size: 100%
+  background-repeat: repeat-y
+  &__wrapper
+    position: relative
+    height: 100%
+  &__content
+    background-color: white
+    position: absolute
+    top: -60px
+    bottom: -60px
+    left: 0
+    right: 0
+  &__top-bar
+    margin-top: 60px
+    display: flex
+    justify-content: space-around
+  &__top-bar-item
+    width: 230px
+    height: 65px
+    max-height: 65px
+    text-align: center
+    position: relative
+    &::before
+      content: ""
+      display: block
+      width: 120px
+      height: 120px
+      border-radius: 50%
+      background-color: white
+      position: absolute
+      top: -120px
+      left: 0
+      right: 0
+      margin-left: auto
+      margin-right: auto
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 40px
+    &-shipping::before
+      background-image: url(../../assets/images/webp/plane.webp)
+    &-refund::before
+      background-image: url(../../assets/images/webp/clock.webp)
+    &-support::before
+      background-image: url(../../assets/images/webp/support.webp)
+  &__top-bar-item-label
+    font-size: 3em
+    font-weight: 900
+    margin-bottom: 10px
+  &__top-bar-item-text
+    font-size: 1.6em
+    font-weight: 500
