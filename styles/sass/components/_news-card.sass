@@ -1,0 +1,83 @@
+.news-card
+  width: 360px
+  min-width: 360px
+  height: 470px
+  background-color: white
+  position: relative
+  padding: 260px 30px 70px 30px
+  box-sizing: border-box
+  text-align: left
+  &__photo
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    height: 230px
+    background-color: $gray
+  &__image
+    object-fit: cover
+    width: 100%
+    height: 100%
+  &__header
+    margin-bottom: 20px
+  &__label
+    font-size: 1.8em
+    font-weight: 800
+    color: $light-color
+  &__postscript
+    font-size: 1.4em
+    color: $gray
+  &__text
+    color: $light-color
+    font-size: 1.4em
+  &__bar
+    position: absolute
+    bottom: 25px
+    left: 30px
+    right: 30px
+    height: 30px
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+  &__button
+    display: block
+    font-size: 1.3em
+    width: 100px
+    height: 30px
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0
+  &__icons
+    display: flex
+    column-gap: 25px
+  &__icon
+    width: 15px
+    height: 15px
+    position: relative
+    cursor: pointer
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      left: 0
+      right: 0
+      height: 100%
+      width: 100%
+      background-position: center
+      background-size: contain
+      background-repeat: no-repeat
+      filter: invert(24%) sepia(82%) saturate(3420%) hue-rotate(325deg) brightness(99%) contrast(97%)
+    &:not(:last-child)::after
+      content: ""
+      display: block
+      width: 1px
+      height: 100%
+      background-color: $gray
+      position: absolute
+      right: -13px
+      cursor: default
+  &__like::before
+    background-image: url(../../assets/images/svg/like.svg)
+  &__comment::before
+    background-image: url(../../assets/images/svg/comment.svg)
